@@ -16,7 +16,7 @@ function MovieForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/movies", {
+    fetch("/movies", {  //because of proxing in the package.json we do not need to add the https:....
       method: "POST",
       headers: {
         "Content-Type": "application/json",
